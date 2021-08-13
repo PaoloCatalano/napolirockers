@@ -58,7 +58,7 @@ export const socials = [
 const tempSocials = socials.map(({ id, text, url, icon }) => {
   return (
     <li key={id}>
-      <a href={url} className="a-social">
+      <a href={url} className="a-social" target="_blank" rel="noreferrer">
         {icon}
         {text}
       </a>

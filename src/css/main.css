@@ -229,7 +229,7 @@ table {
   border-spacing: 0;
 }
 /* From Coding Addict */
-/* @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');*/
+/* @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');*/
 *,
 ::after,
 ::before {
@@ -277,7 +277,7 @@ table {
   --green: #008037;
   --red: #ff1616;
   /* LOGO */
-  --green-logo: #819c8b;
+  --green-logo: #62bc83;
   --grey-logo: #a8aba6;
   --yellow-logo: #e6d386;
   --bg-logo: #e0dfc1;
@@ -287,11 +287,12 @@ table {
   --defaultFontSize: 87.5%;
   --headingFont: "Copperplate", fantasy;
   --alternative-font: "Papyrus", fantasy;
-  --bodyFont: "Cutive Mono", monospace;
+  --bodyFont: "Syne Mono", monospace;
   --smallText: 0.7em;
   /* rest */
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-1000);
+  --backgroundColor: var(--grey-1000);
+  --titleColor: var(--yellow);
+  --textColor: var(--yellow-logo);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -317,16 +318,14 @@ table {
   }
 }
 body {
-  background: var(--backgroundColor);
-  color: var(--textColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  overflow-x: none;
 }
 p {
   margin-bottom: 1.5rem;
   max-width: 40em;
+  font-size: 1.1rem;
 }
 h1,
 h2,
@@ -531,6 +530,7 @@ form :last-child {
   background: var(--red-light);
 }
 .title {
+  color: var(--titleColor);
   text-align: center;
   margin-bottom: 2rem;
   text-transform: capitalize;
@@ -564,16 +564,33 @@ form :last-child {
 /* PAGES */
 main {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
 }
 article {
+  width: 100%;
+  display: grid;
+  place-items: center;
   justify-self: center;
+  margin-bottom: 3rem;
 }
+article:nth-of-type(odd) {
+  background-color: var(--black-logo);
+  color: var(--yellow-logo);
+}
+article:nth-of-type(2) {
+  background-color: var(--white);
+  color: var(--red-dark);
+}
+article:nth-of-type(2) .title {
+  color: var(--green);
+}
+
 /* NAVBAR */
 nav {
-  background-color: var(--bg-logo);
+  background-color: transparent;
 }
 .navbar,
 .nav-links {
@@ -594,7 +611,7 @@ nav {
 }
 /* TITLE */
 .title {
-  transform: translateX(-2rem);
+  transform: translateX(-1rem);
 }
 .title span {
   max-width: 100px;
@@ -606,7 +623,7 @@ nav {
 }
 /* FOOTER */
 footer {
-  width: 100vw;
+  width: 100%;
   background: var(--black-logo);
   color: var(--yellow-logo);
   padding: 1rem 3rem;
@@ -620,7 +637,7 @@ footer a {
 .social-footer {
   padding: 1rem;
   max-width: 400px;
-  background-color: var(--backgroundColor);
+  background-color: var(--white);
   border: 3px inset black;
   display: flex;
   flex-direction: row;
@@ -629,5 +646,9 @@ footer a {
   justify-content: center;
 }
 .social-footer li:not(:first-child) {
-  margin: 0.5rem 1.5rem;
+  margin: 0.5rem 1.8rem;
+}
+/* BAND */
+.band span {
+  color: var(--green-logo);
 }

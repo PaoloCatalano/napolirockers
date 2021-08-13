@@ -42,7 +42,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Cutive Mono",
+              family: "Syne Mono",
               variants: ["300", "400", "500"],
             },
           ],
