@@ -14,7 +14,7 @@ const siteMetadata = {
   titleTemplate: "%s · We are what we do",
   description:
     "Napoli Rockers is a musical collective born in 2010 from a group of young Neapolitan musicians, united in order to share their deep love for Reggae music together with its true message: bring voice to those who have never had it, and claim unity, peace and justice.",
-  siteUrl: "http://localhost:8000", // No trailing slash allowed!
+  siteUrl: "https://napolirockers.netlify.app/", // No trailing slash allowed!
   image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
   twitterUsername: "@PaoroCatarano",
   siteLanguage: `en`,
