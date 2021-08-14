@@ -1,6 +1,6 @@
 import React from "react"
 import { FaWhatsapp } from "react-icons/fa"
-import { ImFacebook2 } from "react-icons/im"
+import { ImFacebook2, ImSoundcloud } from "react-icons/im"
 import { FiMail } from "react-icons/fi"
 import { FaInstagram, FaYoutube, FaBandcamp } from "react-icons/fa"
 
@@ -12,7 +12,7 @@ export const socials = [
   {
     id: 0,
     text: `${email}`,
-    url: `<mailto:$>email</mailto:$>`,
+    url: `mailto:${email}`,
     icon: <FiMail className="icon" style={{ color: "var(--black-logo)" }} />,
   },
   {
@@ -53,6 +53,12 @@ export const socials = [
       <FaInstagram className="icon" style={{ color: "var(--orange-logo)" }} />
     ),
   },
+  {
+    id: 7,
+    text: "",
+    url: "https://soundcloud.com/napolirockersyndicate",
+    icon: <ImSoundcloud className="icon" style={{ color: "var(--yellow)" }} />,
+  },
 ]
 
 const tempSocials = socials.map(({ id, text, url, icon }) => {
@@ -65,7 +71,7 @@ const tempSocials = socials.map(({ id, text, url, icon }) => {
     </li>
   )
 })
-export default ({ styleClass }) => {
+const social = ({ styleClass }) => {
   return (
     <>
       <div
@@ -77,3 +83,4 @@ export default ({ styleClass }) => {
     </>
   )
 }
+export default social

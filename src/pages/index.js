@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
+import { Video, RegVideo } from "../components/Video"
 
 export default function Home() {
   return (
     <Layout>
+      <RegVideo />
       <article>
         <Title title="We are what we do!" />
 

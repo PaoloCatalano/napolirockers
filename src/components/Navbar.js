@@ -11,11 +11,8 @@ export default function Navbar() {
       </div>
       <ul className="nav-links">
         {links.map(l => (
-          <li key={l.id}>
-            <Link
-              to={l.url}
-              activeStyle={{ color: "#424244", textDecoration: "underline" }}
-            >
+          <li key={l.id} className="hover">
+            <Link to={l.url} activeClassName="activeLink">
               {l.text}
             </Link>
           </li>
