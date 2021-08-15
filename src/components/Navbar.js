@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div style={{ margin: "5px 10px" }}>
-        <Logo width={100} />
+        <Logo />
       </div>
       <ul className="nav-links">
         {links.map(l => (

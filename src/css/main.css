@@ -601,7 +601,7 @@ article:nth-of-type(2) .title {
 /* NAVBAR */
 nav {
   background-color: transparent;
-  background-image: url("../assets/images/navbar-banner.png");
+  background-image: url("../assets/images/navbar-banner3.png");
   background-position: top; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -647,7 +647,11 @@ nav {
 /* FOOTER */
 footer {
   width: 100%;
-  background: var(--black-logo);
+  /* background: var(--black-logo); */
+  background-image: url("../assets/images/footer1.png");
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   color: var(--yellow-logo);
   padding: 1rem 3rem;
   display: grid;

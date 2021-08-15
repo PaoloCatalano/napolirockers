@@ -8,7 +8,7 @@ export default function Band() {
       <article className="band">
         <Title title="band formation" />
 
-        <p>
+        <div style={{ marginBottom: "4rem" }}>
           <div>
             <span>Voice/rhythm guitar:</span> Alessandro Larizza
           </div>
@@ -50,7 +50,7 @@ export default function Band() {
           <div>
             <span>Drums:</span> Paolo Maurelli
           </div>
-        </p>
+        </div>
       </article>
       <article>
         <Title title="Collaboration" />
